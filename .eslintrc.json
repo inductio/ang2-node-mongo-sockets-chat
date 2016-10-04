@@ -1,0 +1,18 @@
+{
+    "parser": "babel-eslint",
+    "extends": "airbnb",
+    "plugins": [
+        "import",
+        "angular",
+        "promise"
+    ],
+    "settings": {
+        "angular": 2
+    },
+    "rules": {
+        "angular/no-inline-template": 2,
+        "promise/promise-newline": 2,
+        "linebreak-style": ["error", "windows"],
+        "new-cap": ["error", { "capIsNew": false }]
+    }
+}
