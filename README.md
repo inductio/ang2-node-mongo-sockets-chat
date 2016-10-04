@@ -1,5 +1,5 @@
 # MPJS
-This is **Angular2 + Node + Mongo DB + Sockets ** chat project
+This is **Angular2 + NodeJS + MongoDB + SocketsIO** chat project
 
 ## How to use
 
