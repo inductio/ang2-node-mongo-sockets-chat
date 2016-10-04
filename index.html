@@ -2,15 +2,21 @@
 <html>
 <head>
     <title>Angular2 app</title>
-    <style>
-        body {
-            font-family: sans-serif;
-        }
-    </style>
 </head>
 <body>
-<h1>Angular2 app</h1>
+<h1>This is Angular2 + NodeJS + MongoDB + SocketsIO chat project</h1>
 <hello-app>Loading...</hello-app>
+
+<ul>
+    <li data-ng-repeat="message in Chat.messages track by $index">
+        {{message.text}}
+    </li>
+</ul>
+
+<form data-ng-submit="Chat.sendMessage()">
+    <input data-ng-model="Chat.newMessage" autocomplete="off"/>
+    <button>Send Message</button>
+</form>
 
 <script src="./public/app.js"></script>
 </body>
