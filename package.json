@@ -1,14 +1,14 @@
 {
   "name": "MPJSChat",
   "version": "0.1.0",
-  "description": "",
-  "main": "index.js",
+  "description": "This is Angular2 + NodeJS + MongoDB + SocketsIO chat project",
+  "main": "app/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --progress --display-errors",
     "server": "node server.js"
   },
-  "author": "",
+  "author": "Shustrov Oleksandr",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^6.3.6",
