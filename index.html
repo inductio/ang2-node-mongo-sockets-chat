@@ -13,6 +13,12 @@
     </li>
 </ul>
 
+<form [ngFormModel]="loginForm" (submit)="doLogin($event)">
+    <input ngControl="email" type="email" placeholder="Your email">
+    <input ngControl="password" type="password" placeholder="Your password">
+    <button type="submit">Log in</button>
+</form>
+
 <form data-ng-submit="Chat.sendMessage()">
     <input data-ng-model="Chat.newMessage" autocomplete="off"/>
     <button>Send Message</button>

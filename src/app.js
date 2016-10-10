@@ -47,6 +47,24 @@ const routing = RouterModule.forRoot([
   { path: 'bye/:name', component: Bye },
 ]);
 
+
+@Component({
+})
+
+export class MyComponent {
+  constructor(private http:Http) {
+  this.data = {
+  name: 'some name'
+  (...)
+};
+}
+
+onSubmit() {
+  this.http.post('http://someurl', JSON.stringify(this.data))
+      .subscribe(...);
+}
+}
+
 @NgModule({
   imports: [
     BrowserModule,
